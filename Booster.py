@@ -230,6 +230,7 @@ def stream_coreset(P, u, b, folds=None, dtype='float64'):
 ###################################################################################
 
 
+# general test whether the fit result match the original problem
 def test_model(test_data, test_labels, test_weights, clf):
     weighted_test_data = test_data * np.sqrt(test_weights[:, np.newaxis])
     weighted_test_labels = test_labels * np.sqrt(test_weights[:, np.newaxis])
@@ -237,6 +238,7 @@ def test_model(test_data, test_labels, test_weights, clf):
     return score
 
 
+# normal train data methods0
 def train_model(data, labels, weights, clf):
     time_start = time.time()
     weighted_data = data * np.sqrt(weights[:, np.newaxis])
@@ -247,6 +249,7 @@ def train_model(data, labels, weights, clf):
     return time_end - time_start, clf
 
 
+# K-fold validation to train, using this paper's coreset method
 def coreset_train_model(data, labels, weights, clf, folds=None, solver='ridge'):
     time_start = time.time()
 
