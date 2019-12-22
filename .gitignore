@@ -1,2 +1,7 @@
+# vscode
+.vscode/
+
 # python cache
 *.pyc
+
+data/3D_spatial_network.csv
