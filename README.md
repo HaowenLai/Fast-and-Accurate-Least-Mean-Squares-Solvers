@@ -19,8 +19,12 @@ Some result images are in folder `'./images'`
 - `matplotlib`==3.0.3
 
 ## Image Preview
-
-
+different value d  
+![various_d](https://github.com/HaowenLai/Fast-and-Accurate-Least-Mean-Squares-Solvers/blob/master/images/size-time%20of%20various%20d-elasticCV.png)  
+line chart of errors of three methods  
+![line_c](https://github.com/HaowenLai/Fast-and-Accurate-Least-Mean-Squares-Solvers/blob/master/images/line_chart_of_errors_of_three_methods.png)  
+histogam of errors  
+![hist](https://github.com/HaowenLai/Fast-and-Accurate-Least-Mean-Squares-Solvers/blob/master/images/histogam_of_errors_of_linBoost0.png)  
 
 ## About Dataset
 3D Road Network (North Jutland, Denmark)  
